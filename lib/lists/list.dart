@@ -3,8 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:irdc__attend/services/database.dart';
 
+// this is for the IRDC employess
 class List extends StatefulWidget {
   const List({super.key});
 
@@ -43,24 +43,10 @@ class _ListState extends State<List> {
                     );
                   }
                   // ignore: prefer_const_constructors
-                  return Card(
-                      // child: ListTile(
-                      //   leading: Icon(Icons.person),
-                      //   title:
-                      //       Text(snapshot.data!.docs[index]['name'].toString()),
-                      //   trailing: Icon(
-                      //     Icons.circle,
-                      //     color: Colors.red,
-                      //   ),
-                      // ),
-                      );
+                  return Card();
                 },
               ),
             );
-
-            // return Center(
-            //   child: CircularProgressIndicator(),
-            // );
           }),
     );
   }
